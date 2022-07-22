@@ -27,6 +27,12 @@ Inside the Service file we can find a class called TotpService which contains pr
 -An HMAC SHA512 hash generator used for the UserSecret and the TOTP;
 -Multiple methods used as converters required for creating the UserSecret and the TOTP.
 
+!!! Notes !!!
+
+There are a few things that are worth mentioning:
+
+- Even though it is a bad practice, CORS has been disabled because the BE is in a development state.
+
 #TestsTOTP
 
 Which represents the UnitTesting for the backend. The UnitTotpService.cs file contains TestMethods that verifies different scenarios of generating TOTP, expiry time and secret used with different data sets, labeled as good or wrong data sets.
